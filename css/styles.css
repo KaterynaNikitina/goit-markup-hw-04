@@ -144,44 +144,31 @@ p {
   align-items: center;
 }
 
+
 .icon-envelope,
 .icon-smartphone {
   fill: var(--primary-text-color);
   margin-right: 10px;
-}
+  }
 .icon-envelope {
   width: 16px;
   height: 12px;
-}
+  }
+
 .icon-smartphone {
   width: 10px;
   height: 16px;
 }
 
-.icon-envelope:hover,
-.icon-envelope:focus,
-.icon-smartphone:hover,
-.icon-smartphone:focus {
-  fill: var(--accent-color);
+.contact-link:hover svg {
+fill: var(--accent-color);
 }
+
 
 /* Hero Section */
 
-.hero {
-  text-align: center;
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: var(--hero-button-background);
-}
-
 .overlay {
   max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-left: auto;
   background-color: #c4c4c4;
   background-image: linear-gradient(
       to right,
@@ -192,6 +179,12 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
+  
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -234,9 +227,8 @@ p {
 
 /* Preferences Section */
 
-.section {
-  padding-top: 94px;
-  /* padding-bottom: 94px; */
+.pref-section {
+  padding-top: 94px; 
 }
 
 .section-title {
@@ -268,7 +260,7 @@ p {
 .pref-item {
   flex-basis: calc((100% - 90px) / 4);
   background-color: var(--primary-white-color);
-  /* padding-bottom: 30px; */
+  
 }
 .thumb {
   width: 270px;
@@ -293,6 +285,11 @@ p {
 }
 
 /* Our Activity Section */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .act-container {
   display: flex;
@@ -382,7 +379,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  margin-bottom: 94px;
+  
 }
 .client-link {
   display: flex;
@@ -413,6 +410,9 @@ p {
 
 .footer-color {
   background-color: var(--dark-grey-background);
+  /* padding: 60px 0 60px 15px; */
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-marg {
@@ -423,8 +423,6 @@ p {
 .footer-container {
   display: flex;
   align-items: baseline;
-  padding: 60px 0 60px 15px;
-  /* padding-bottom: 60px; */
 }
 
 .footer-logo-part {
